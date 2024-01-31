@@ -1,0 +1,87 @@
+/* Add this to your existing CSS file or create a new one */
+
+body {
+  /* background: linear-gradient(to right, #141e30, #243b55); */
+  background-color: black;
+  color: #fff;
+}
+label{
+  color: black;
+}
+.header {
+  /* position: fixed; */
+  width: 100%;
+  background-color: #dc3545;
+}
+.custom-jumbotron {
+  margin-top: 150px;
+  background: white;
+  padding: 50px;
+  margin: 0 auto; /* Center the jumbotron */
+  border-radius: 15px;
+  width: 75%; /* Set the width to 50% of the viewport */
+  text-align: center; /* Align text to the center */
+  box-shadow: 0 0 10px rgba(237, 229, 229, 0.2);
+}
+
+.custom-jumbotron {
+  margin-top: 100px;
+  background: white;
+  color: black;
+  padding: 50px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+}
+.button-container a{
+  width: 150px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.button-container a:hover{
+  width: 150px;
+  background-color: black;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 0px;
+}
+
+/* Contact Form Styles */
+#contact-form {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Address Section Styles */
+.fa-map-marker, .fa-mobile, .bi-envelope {
+  font-size: 20px;
+}
+
+/* Social Media Buttons Styles */
+.btn-group {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Animation Effects */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container-fluid, .jumbotron, #contact-form, .btn-group {
+  animation: fadeInUp 2s ease-in-out;
+}
