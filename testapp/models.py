@@ -39,4 +39,3 @@ class Hyderabad_job(models.Model):
     location = models.CharField(max_length=100)
     email = models.EmailField()
     phone = models.BigIntegerField()
-

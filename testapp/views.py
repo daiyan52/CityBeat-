@@ -15,7 +15,7 @@ def EmployeeForm_view(request):
     form = EmployeeForm()
     if request.method == 'POST':
         form = EmployeeForm(request.POST)
-        if form.is_valid():
+        if form.is_valid(): 
             # print(form.cleaned_data['name'])
             # print(form.cleaned_data['marks'])
             fname = form.cleaned_data['First_Name']

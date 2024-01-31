@@ -76,7 +76,7 @@ class EmployeeForm(forms.Form):
         First_Name = self.cleaned_data['First_Name']
 
         if len(First_Name) < 4:
-            raise forms.ValidationError('First Name should be at least 4 characters long').color=='red'
+            raise forms.ValidationError('First Name should be at least 4 characters long')
         if First_Name and not First_Name[0].isupper():
             raise forms.ValidationError('First Name should start with a capital letter')
 
@@ -109,6 +109,7 @@ class EmployeeForm(forms.Form):
 
         if len(phone_number) != 10:
             raise forms.ValidationError('Phone Number should be 10 digits long')
+        return phone_number
         
     def clean_email_address(self):
         email_address = self.cleaned_data['email_address']

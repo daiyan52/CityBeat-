@@ -17,3 +17,4 @@ class Hyderabad_job_Admin(admin.ModelAdmin):
     list_display = ('estd', 'company', 'position', 'eligibility', 'location', 'email', 'phone')
 admin.site.register(Hyderabad_job, Hyderabad_job_Admin)
 
+
