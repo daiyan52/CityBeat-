@@ -1,5 +1,5 @@
 from django.contrib import admin
-from testapp.models import Kolkata_job,Delhi_job,Bengaluru_job,Hyderabad_job
+from testapp.models import Kolkata_job,Delhi_job,Bengaluru_job,Hyderabad_job,feedback
 # Register your models here.
 class Kolkata_job_Admin(admin.ModelAdmin):
     list_display = ('estd', 'company', 'position', 'eligibility', 'location', 'email', 'phone')
@@ -17,4 +17,6 @@ class Hyderabad_job_Admin(admin.ModelAdmin):
     list_display = ('estd', 'company', 'position', 'eligibility', 'location', 'email', 'phone')
 admin.site.register(Hyderabad_job, Hyderabad_job_Admin)
 
-
+class feedback_admin(admin.ModelAdmin):
+    list_display = ('name', 'email','message')
+admin.site.register(feedback, feedback_admin)

@@ -113,8 +113,7 @@ class EmployeeForm(forms.Form):
         
     def clean_email_address(self):
         email_address = self.cleaned_data['email_address']
-
-        if len(email_address) >= 10 and email_address.lower().endswith('@gmail.com'):
+        if email_address.lower().endswith('@gmail.com'):
             return email_address
         else:
             raise forms.ValidationError('Email Address should end with @gmail.com')

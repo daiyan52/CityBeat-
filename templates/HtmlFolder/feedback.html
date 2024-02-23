@@ -15,16 +15,15 @@
     <body>
          <div class="container">
             {% if submitted %}
-            <h1 class="text-success">Dear {{fname}}, we appreciate your application!</h1>
+            <h5 class="text-primary">Dear <span class="text-success lead">{{ name }}</span>, we sincerely appreciate your valuable feedback. Thank you for taking the time to share your insights with us.</h5>
             {% else %}
             <h1>Registration Form</h1>
              <form method="post" class="my-4">
                 {{form.as_p}}
-
                 {% csrf_token %}
                 <input type="submit" value="Submit" class="btn btn-primary btn-lg">
              </form>
-             {% endif %}
+            {% endif %}
          </div>
     </body>
 </html>
