@@ -12,7 +12,7 @@
   <title>CityBite Home Page</title>
   <link rel="stylesheet" href="{% static 'css/home.css' %}">
 </head>
-<body class="container-fluid">
+<body>
     <div class="header">
         <nav class="navbar navbar-light bg-danger">
             <div class="container-fluid">
@@ -29,7 +29,7 @@
     </div>
 
         <div class="jumbotron custom-jumbotron">
-            <h1 class="display-4">Hello CityBeat Explorer!</h1>
+            <h4 class="display-4">Hello CityBeat Explorer!</h4>
             <p class="text-success">Navigate Your IT Journey with <span class="text-danger">CityBeat</span> Job Portal</p>
             <hr class="my-4">
             <p class="text-secondary">Start exploring opportunities with us. Happy browsing!</p>
@@ -42,6 +42,10 @@
     <div class="container mt-5">
         <div class="row justify-content-between">
             <div class="col-md-5">
+                <h4 class="text-center text-info">
+                    <i class="fa fa-envelope"></i>
+                    Contact
+                </h4>
                 <form id="contact-form" action="https://formspree.io/f/xbjverlv" method="POST" class="bg-white">
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>
@@ -92,6 +96,8 @@
             </div>
         </div>
     </div>
-    
+    <footer class="text-center mt-5 bg-secondary">
+        <p><i class="fa fa-copyright"></i> 2024</p>
+    </footer>    
  </body>
 </html>
